@@ -1,3 +1,4 @@
+# fish greeting
 set fish_greeting ""
 
 set -gx TERM xterm-256color
@@ -27,7 +28,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH node_modules/.bin $PATH
 
 # Go
-set -g GOPATH $HOME/go
+set -gx GOPATH (asdf where golang)/go
 set -gx PATH $GOPATH/bin $PATH
 
 # NVM
